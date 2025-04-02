@@ -1,0 +1,27 @@
+# config.yaml
+
+model:
+  name: "my_trained_model"
+  gcs_path: "gs://your-bucket-name/models/v1/model.pkl"
+  version: "v1"
+
+data:
+  input_data:
+    gcs_path: "gs://your-bucket-name/data/input.csv"
+  output_data:
+    gcs_path: "gs://your-bucket-name/data/output.csv"
+
+training:
+  learning_rate: 0.001
+  epochs: 10
+  batch_size: 32
+
+preprocessing:
+  scaler: "StandardScaler"
+  feature_list:
+    - feature1
+    - feature2
+    - feature3
+gcs:
+   bucket_name: "customer_churn-sinni12"
+   dataset_name: "customer_churn.csv"
