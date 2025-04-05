@@ -1,0 +1,6 @@
+google-cloud-aiplatform
+kfp~=2.12.1
+PyYAML~=6.0.2
+google~=3.0.0
+protobuf~=4.25.6
+pandas~=1.5.3

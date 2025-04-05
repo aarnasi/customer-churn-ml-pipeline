@@ -1,27 +1,22 @@
 # config.yaml
-
 model:
-  name: "my_trained_model"
-  gcs_path: "gs://your-bucket-name/models/v1/model.pkl"
+  name: <your-model-name>
+  gcs_path: <your-model-gcs-path>
   version: "v1"
 
-data:
-  input_data:
-    gcs_path: "gs://your-bucket-name/data/input.csv"
-  output_data:
-    gcs_path: "gs://your-bucket-name/data/output.csv"
-
-training:
-  learning_rate: 0.001
-  epochs: 10
-  batch_size: 32
-
-preprocessing:
-  scaler: "StandardScaler"
-  feature_list:
-    - feature1
-    - feature2
-    - feature3
 gcs:
-   bucket_name: "customer_churn-sinni12"
-   dataset_name: "customer_churn.csv"
+   bucket_name: <your-model-bucket-name>
+   dataset_name: <your-csv-data-name>
+pipeline:
+   name: <your-pipeline-name>
+   description: <your-pipeline-description>
+   pipeline_root: gs://<your-pipeline-gcs-path>"
+service:
+  image_uri: <gcloud-docker-artifact-path>
+  service_name: <endpoint-service-name>
+  region: <region>
+  project_id: <project-id>
+  min_instances: <min-instance-count>
+  max_instances: <max-instance-count>
+  concurrency: <max-concurrency-request-count>
+  timeout: "60s"
