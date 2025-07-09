@@ -4,7 +4,7 @@ An end‑to‑end machine learning pipeline in Python for predicting customer ch
 
 ## 🔧 Pipeline Architecture
 
-![Pipeline Architecture](assets/sample-pipeline-run.png)
+![Sample Pipeline Run](assets/sample-pipeline-run.png)
 ---
 
 ## Table of Contents
