@@ -1,1 +1,1 @@
-__all__=['data_ingester', 'data_preprocessor', 'model_trainer']
+__all__=['data_ingestion', 'data_preprocessor', 'model_trainer']
